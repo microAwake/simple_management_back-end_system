@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>后台管理系统登录</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="login">
+        <div class="loginMain">
+            <h4>登录管理系统</h4>
+            <form action="/" method="get">
+                <ul>
+                    <li>
+                        <span>管理员账号:</span>
+                        <input type="text" name="username" class="username">
+                    </li>
+                    <li>
+                        <span>管理员密码:</span>
+                        <input type="password" name="password" class="password">
+                    </li>
+                    <li>
+                        <span>登录验证码:</span>
+                        <input type="text" name="textverify" class="verify">
+                    </li>
+                    <li>
+                        <div class="verifyImg">
+                            <img src="img/verifyimg.png" alt="verify img">
+                        </div>
+                    </li>
+                    <li>
+                        <input type="button" value="登录" name="loginbtn">
+                        <span class="loginInformation"></span>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/my.js"></script>
+</body>
+</html>

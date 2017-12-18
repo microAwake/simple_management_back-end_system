@@ -1,0 +1,270 @@
+@charset "utf-8";
+/**CSS Reset 开始**/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+}
+blockquote,q {quotes: none;}
+blockquote:before,blockquote:after,q:before,q:after {content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+/**CSS Reset 结束**/
+
+/**公共样式开始**/
+body,th,td,button,input,select,textarea {font: 12px/1.62 "Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,tahoma,arial,Verdana,sans-serif;color: #333;}
+ol,ul {list-style: none;}
+img {border:0;vertical-align:middle;}
+a {text-decoration: none;outline:none;blr:expression(this.onFocus=this.blur());}
+h1 {font-size:36px;}
+h2 {font-size:30px;}
+h3 {font-size:24px;}
+h4 {font-size:18px;}
+h5 {font-size:14px;}
+h6 {font-size:12px;}
+.left, .l {float:left;}
+.right, .r {float:right;}
+.clearfix, .cf{*zoom:1}
+.clearfix:after, .cf:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.clear, .cl {clear:both;}
+/**公共样式开结束**/
+
+/* 登录页面样式开始 */
+.login{
+    /* margin: 100px auto; */
+    width: 500px;
+    height: 340px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin:-170px 0 0 -250px;
+    background:#0077CA;
+}
+.login .loginMain{
+    padding: 20px;
+    color: white;
+}
+.login .loginMain ul{
+    margin:10px 0 0 40px;
+}
+.login .loginMain ul li{
+    list-style: none;
+    margin-top:18px;
+}
+.login .loginMain ul li span{
+    font-size: 14px;
+    margin-right: 10px;
+}
+.login .loginMain ul li input[type='text'],.login .loginMain ul li input[type='password']{
+    width: 250px;
+    height: 30px;
+    padding:0 5px;
+}
+.login .loginMain ul li .verifyImg{
+    margin-left:85px;
+}
+.login .loginMain ul li .verifyImg img{
+    width: 264px;
+    height:40px;
+}
+.login .loginMain ul li input[type='button']{
+    margin-left: 85px;
+    color:white;
+    background-color: #00497D;
+    border: 0;
+    width: 60px;
+    height: 30px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.login .loginMain ul li input[type='button']:hover{
+    background-color:#015997;
+}
+.login .loginMain ul li .loginInformation{
+    margin-left: 15px;
+    display: inline-block;
+    width: 240px;
+    height: 30px;
+}
+/* 登录界面样式结束 */
+
+/* 后台管理页面头部样式开始 */
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: #0f92d6;
+}
+.headerLogo{
+    width: 163px;
+    height: 60px;
+    text-align: center;
+}
+.headerLogo a{
+    color: white;
+}
+.header ul.headerLeft li{
+    float: left;
+}
+
+.headerLeft li{
+    display: inline-block;
+    width: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    height: 60px;
+    margin-right:5px;
+    padding-top: 5px;
+    background-color: #22B7EB;
+}
+.headerLeft li a{
+    color: white;
+    display: block;
+    padding-top: 30px;
+}
+.headerLeft li.header-menu1 a{
+    background: url(../img/ico_bg.png) center 0 no-repeat;
+}
+.headerLeft li.header-menu2 a{
+    background: url(../img/ico_bg.png) center -202px no-repeat;
+}
+.headerLeft li.header-menu3 a{
+    background: url(../img/ico_bg.png) center -303px no-repeat;
+}
+.headerLeft li.header-menu4 a{
+    background: url(../img/ico_bg.png) center -400px no-repeat;
+}
+.headerLeft li.header-left-chosen{
+    width:120px;
+    background-color: #62d2f9;
+}
+.headerLeft li:hover{
+    background-color: #62d2f9;    
+}
+.headerRight{
+    float: right;
+}
+.headerRight li{
+    display: inline-block;
+    /* text-align: center; */
+    padding-top: 20px;
+}
+.headerRight li a{
+    color: white;
+    display: block;
+    margin-right: 10px;
+    padding-left: 20px;
+}
+.headerRight li a:hover{
+    color:silver;
+}
+.headerRight li.headerRight-icon1 a{
+    background: url('../img/main_link_ico.png') 0 0 no-repeat;
+}
+.headerRight li.headerRight-icon2 a{
+    background: url('../img/main_link_ico.png') 0 -150px no-repeat;
+}
+.headerRight li.headerRight-icon3 a{
+    background: url('../img/main_link_ico.png') 0 -50px no-repeat;
+}
+.headerRight li.headerRight-icon4 a{
+    background: url('../img/main_link_ico.png') 0 -100px no-repeat;
+}
+.headerRight li.headerRight-icon5 a{
+    background: url('../img/main_link_ico.png') 0 -190px no-repeat;
+}
+/* 后台管理页面头部样式结束 */
+
+/* 后台管理页面左侧样式开始 */
+div.sideLeft{
+    /* 使左侧栏高度一直延伸至底部 */
+    position: absolute;
+    left: 0;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+    margin-top: 10px;
+    width: 170px;
+    box-sizing: border-box;
+    height:auto;
+    border-right: 1px solid #B8C8D2;
+    overflow-x: hidden;  
+    background-color: #EDFBFF;    
+}
+div.sideLeft dl dt{
+    /* background-color: #009BEB; */
+    color: white;
+    font-size: 14px;
+    text-indent: 20px;
+    font-weight: bold;
+    height: 20px;
+    padding:5px 0;
+    background:#009BEB url('../img/ico_small.png') right 10px no-repeat;
+    cursor: pointer;
+}
+div.sideLeft dl dd ul li{
+    background-color: #EDFBFF;
+    height: 30px;
+    width: 170px;
+    box-sizing: border-box;
+    padding-top: 3px;
+}
+div.sideLeft dl dd ul li a{
+    display: block;
+    height: 16px;
+    width: 140px;
+    padding: 3px 0 3px 8px;
+    color:black;
+    margin-left: 26px;  
+}
+div.sideLeft dl dd ul li a:hover{
+    color:#009BEB;
+    border-top: 1px solid #B8C8D2;
+    border-bottom: 1px solid #B8C8D2;
+    border-left: 1px solid #B8C8D2;
+}
+/* 后台管理页面左侧样式结束 */
+
+/* 内容主体区域开始 */
+div.contentMain{
+    position:absolute;
+    left: 180px;
+    top:70px;
+    bottom: 0;
+    right:0;
+    overflow: hidden;
+}
+div.contentMain iframe{
+    width: 100%;
+    height:100%;
+}
+/* 内容主体区域结束 */
+
+/* contentMain.html */
+.contentMainTotal{
+    color:white;
+}
+.contentMainTotal dt{
+    font-size:18px;
+    padding: 8px 0 6px 5px;
+}
+.contentMainTotal dd{
+    margin-bottom: 10px;
+    padding:0 0 3px 5px;
+}
+.contentMainTotal .contentMainLeft{
+    float: left;
+    width: 49%;
+    margin-right: 0.5%;
+}
+.contentMainTotal .contentMainRight{
+    float: left;
+    width: 49%;
+}
+.contentMainTotal .contentMainLeft dt, .contentMainTotal .contentMainLeft dd{
+    background-color: #009BEB;
+}
+.contentMainTotal .contentMainRight dt, .contentMainTotal .contentMainRight dd{
+    background-color: #06A520;
+}
